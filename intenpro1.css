@@ -1,0 +1,104 @@
+image{
+    padding-top: 90px;
+    height:250px
+}
+@keyframes bikePedal {
+    0% {
+        transform: translateX(0) scaleX(1);
+      }
+      50% {
+        transform: translateX(120vw) scaleX(1); 
+      }
+      100% {
+        transform: translateX(0) scaleX(1); 
+      }
+      }
+
+.girl-bike {
+  animation: bikePedal 6s infinite ease-in-out forwards;
+  animation-direction:alternate;
+  position:relative;
+ 
+}
+.bg-container {
+    background-image: url("https://res.cloudinary.com/dvllsbsy4/image/upload/v1729592440/bg_qrtb79.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.loginform {
+    background-color: transparent;
+   border-radius: 25px;
+   background: rgba(255, 255, 255, 0.2);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   width: 300px;
+   text-align: center;
+   padding: 20px;
+}
+.top-part {
+    background-color: white;
+    padding: 10px;
+     margin: 10px 0;
+    color: #8f1907;
+    font-size: 18px;
+    }
+
+.red {
+background-color: #8f1907;
+color: #ffffff;
+padding: 10px;
+margin: 10px 0;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+    }
+
+.heading {
+    color: #8f1907;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+     margin-bottom: 20px;
+    }
+    .bottom-section {
+        color: #8f1907;
+        margin-top: 20px;
+    }
+
+.bottom-section a {
+        color: #8f1907;
+        text-decoration: underline;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+.bottom-section a:hover {
+        text-decoration: none;
+    }
+.leaf{
+
+height:50px;
+}
+.grid-container {
+    animation: leaf-move 4s infinite ease-in-out forwards;
+    position: relative;
+    z-index:10 ;
+  }
+  @keyframes leaf-move {
+    0% {
+          transform: translateY(0); 
+        }
+        100% {
+          transform: translateY(500px); 
+        }
+      
+   }
+  .reversed-image {
+        width: 200px; /* Adjust width as needed */
+        transform: scaleX(-1); /* Flips the image horizontally */
+      }
